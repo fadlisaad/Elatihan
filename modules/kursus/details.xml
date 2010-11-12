@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="1.0">
+	<name>
+		<en>Kursus Berjadual</en>
+	</name>
+	<description>
+		<en>Manage small sections of self-contained logic in blocks or "Widgets".</en>
+	</description>
+	<is_frontend>1</is_frontend>
+	<is_backend>0</is_backend>
+	<is_backend_menu>0</is_backend_menu>
+	<controllers>
+		<controller name="admin">
+			<method>index</method>
+			<method>create</method>
+			<method>edit</method>
+			<method>delete</method>
+		</controller>
+	</controllers>
+</module>
