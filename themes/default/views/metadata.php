@@ -10,6 +10,7 @@
 <?php echo js('jquery/jquery.js') ?>
 <?php echo js('jquery/jquery-ui.min.js') ?>
 <?php echo js('jquery/jquery.prettyPhoto.js') ?>
+<?php echo js('jquery/jquery.validate.js') ?>
 <?php echo js('custom.js') ?>
 
 <?php echo $template['metadata'] ?>
