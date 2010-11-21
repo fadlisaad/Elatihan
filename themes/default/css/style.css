@@ -1428,6 +1428,12 @@ font-size: 11px;
 font-weight: bold;
 }
 
+.ajax_form label.error {
+	color: red;
+	width: auto;
+	display: inline;
+}
+
 /* -------------------------------------------
 		NOTIFICATIONS
 -------------------------------------------- */
