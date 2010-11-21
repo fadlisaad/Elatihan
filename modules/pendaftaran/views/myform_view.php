@@ -9,7 +9,7 @@
  * Description : Registration Form.
  */
 
-echo '<p>Pendaftaran</p>';
+echo '<p class=\"notification information\">Maklumat bertanda <span style="color:red">*</span> adalah wajib diisi.</p>';
 
 $attributes = array('class' => 'ajax_form', 'id' => 'form1');
 echo form_open('pendaftaran', $attributes);
@@ -21,7 +21,7 @@ $my_name = array(
               'value'       => '',
               'class'       => 'text_input is_required'
             );
-echo '<p>'.form_input($my_name).form_label('Nama Penuh<span style="color:red">*</span>', 'name').'</p>';
+echo '<p>'.form_input($my_name).form_label('Nama Penuh&nbsp;<span style="color:red">*</span>', 'name').'</p>';
 
 // IC
 $my_ic = array(
@@ -31,7 +31,7 @@ $my_ic = array(
               'maxlength'   => '14',
               'class'       => 'text_input is_required'
             );
-echo '<p>'.form_input($my_ic).form_label('No Kad Pengenalan<span style="color:red">*</span>', 'ic').'</p>';
+echo '<p>'.form_input($my_ic).form_label('No Kad Pengenalan&nbsp;<span style="color:red">*</span>', 'ic').'</p>';
 echo '<div id=\"status\"></div>';
 
 // Password
@@ -42,7 +42,17 @@ $my_password = array(
               'maxlength'   => '20',
               'class'       => 'text_input is_required'
             );
-echo '<p>'.form_password($my_password).form_label('Kata Laluan<span style="color:red">*</span>', 'password').'</p>';
+echo '<p>'.form_password($my_password).form_label('Kata Laluan&nbsp;<span style="color:red">*</span>', 'password').'</p>';
+
+// Password onfirm
+$my_password = array(
+              'name'        => 'password_confirm',
+              'id'          => 'password_confirm',
+              'value'       => '',
+              'maxlength'   => '20',
+              'class'       => 'text_input is_required'
+            );
+echo '<p>'.form_password($my_password).form_label('Sahkan kata Laluan&nbsp;<span style="color:red">*</span>', 'password').'</p>';
 
 // E-mail
 $my_emel_label = array('class' => 'blocklabel');
@@ -50,7 +60,7 @@ $my_emel = array('name' => 'emel',
                 'id'    => 'emel',
                 'value' => '',
                 'class' => 'text_input is_required');
-echo '<p>'.form_input($my_emel).form_label('E-mail<span style="color:red">*</span>', 'emel').'</p>';
+echo '<p>'.form_input($my_emel).form_label('E-mail&nbsp;<span style="color:red">*</span>', 'emel').'</p>';
 
 // Telefon bimbit
 $my_telefon_bimbit_label = array('class' => 'blocklabel');
@@ -60,7 +70,7 @@ $my_telefon_bimbit = array(
                 'value' => '+601',
                 'maxlength' => '12',
                 'class' => 'text_input');
-echo '<p>'.form_input($my_telefon_bimbit).form_label('Telefon Bimbit', 'tel_bimbit').'</p>';
+echo '<p>'.form_input($my_telefon_bimbit).form_label('Telefon Bimbit&nbsp;<span style="color:red">*</span>', 'tel_bimbit').'</p>';
 
 // Telefon pejabat
 $my_telefon_pej_rumah_label = array('class' => 'blocklabel');
