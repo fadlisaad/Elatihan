@@ -60,7 +60,7 @@ else {
 		<?php else: ?>
 		<?php endif ?>
         <th>Tajuk</th>
-        <th width="60">Yuran</th>
+        <th width="60">Yuran (RM)</th>
         <th width="20">Mohon</th>
       </tr>
       </thead>
@@ -76,7 +76,7 @@ else {
 				<?php else: ?>
 				<?php endif ?>
 			  <td><?php echo strtoupper($row['ts_kursus_nama']); ?></td>
-			  <td width="60">RM <?php echo $row['ts_kursus_harga']; ?></td>
+			  <td width="60"><?php echo number_format($row['ts_kursus_harga'],2); ?></td>
 			  <td width="20"><?php echo anchor('kursus/'.$controller.'/keterangan/'.$row['ts_kursus_id'], 'Mohon') ?></td>
         </tr>
         <?php } ?>
@@ -104,7 +104,7 @@ else {
 				<?php else: ?>
 				<?php endif ?>
         <th>Tajuk</th>
-        <th width="60">Yuran</th>
+        <th width="60">Yuran (RM)</th>
         <th width="20">Mohon</th>
       </tr>
       </thead>
@@ -120,7 +120,7 @@ else {
 				<?php else: ?>
 				<?php endif ?>
           <td><?php echo strtoupper($row['ts_kursus_nama']); ?></td>
-          <td width="60">RM <?php echo $row['ts_kursus_harga']; ?></td>
+          <td width="60"><?php echo number_format($row['ts_kursus_harga'],2); ?></td>
           <td width="20"><?php echo anchor('kursus/'.$controller.'/keterangan/'.$row['ts_kursus_id'], 'Mohon') ?></td>
         </tr>
         <?php } ?>
@@ -148,7 +148,7 @@ else {
 				<?php else: ?>
 				<?php endif ?>
         <th>Tajuk</th>
-        <th width="60">Yuran</th>
+        <th width="60">Yuran (RM)</th>
         <th width="20">Mohon</th>
       </tr>
       </thead>
@@ -164,7 +164,7 @@ else {
 				<?php else: ?>
 				<?php endif ?>
           <td><?php echo strtoupper($row['ts_kursus_nama']); ?></td>
-          <td width="60">RM <?php echo $row['ts_kursus_harga']; ?></td>
+          <td width="60"><?php echo number_format($row['ts_kursus_harga'],2); ?></td>
           <td width="20"><?php echo anchor('kursus/'.$controller.'/keterangan/'.$row['ts_kursus_id'], 'Mohon') ?></td>
         </tr>
         <?php } ?>
@@ -192,7 +192,7 @@ else {
 				<?php else: ?>
 				<?php endif ?>
         <th>Tajuk</th>
-        <th width="60">Yuran</th>
+        <th width="60">Yuran (RM)</th>
         <th width="20">Mohon</th>
       </tr>
       </thead>
@@ -208,7 +208,7 @@ else {
 				<?php else: ?>
 				<?php endif ?>
           <td><?php echo strtoupper($row['ts_kursus_nama']); ?></td>
-          <td width="60">RM <?php echo $row['ts_kursus_harga']; ?></td>
+          <td width="60"><?php echo number_format($row['ts_kursus_harga'],2); ?></td>
           <td width="20"><?php echo anchor('kursus/'.$controller.'/keterangan/'.$row['ts_kursus_id'], 'Mohon') ?></td>
         </tr>
         <?php } ?>
