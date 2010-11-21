@@ -38,7 +38,7 @@ WHERE ts_kursus_kategori = Teknologi Ternakan AND ts_kursus_vendor = $id AND ts_
           <td width="20"><?php echo $orderNum0++; ?></td>
 		  <td width="60"><?php echo date("d/m/Y",strtotime($row['ts_kursus_tarikh_mula'])); ?></td>
           <td><?php echo strtoupper($row['ts_kursus_nama']); ?></td>
-          <td width="60">RM <?php echo $row['ts_kursus_harga']; ?></td>
+          <td width="60">RM <?php echo number_format($row['ts_kursus_harga']); ?></td>
           <td width="20"><?php echo anchor('kursus/'.$controller.'/keterangan/'.$row['ts_kursus_id'], 'Mohon') ?></td>
         </tr>
         <?php } ?>
