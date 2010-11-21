@@ -101,6 +101,67 @@ jQuery(document).ready(function(){
 	
 	k_pixelperfect();
 	
+	// validate signup form on keyup and submit
+	jQuery("#form1").validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 5
+			},
+			ic: {
+				required: true,
+				minlength: 12
+			},
+			password: {
+				required: true,
+				minlength: 6
+			},
+			password_confirm: {
+				required: true,
+				minlength: 6,
+				equalTo: "#password"
+			},
+			emel: {
+				required: true,
+				email: true
+			},
+			tel_bimbit: {
+				required: true,
+				minlength: 12
+			},
+			umur: {
+				required: true
+			}
+		},
+		messages: {
+			name: {
+				required: "Sila isi nama penuh anda",
+				minlength: "Nama anda mesti lebih dari 5 askara"
+			},
+			ic: {
+				required: "Sila isi no. kad pengenalan anda",
+				minlength: "No. kad pengenalan anda mestilah mengandungi 12 nombor, tidak termasuk (-)"
+			},
+			password: {
+				required: "Sila isi kata laluan anda",
+				minlength: "Kata laluan mestilah sekurang-kurangnya 6 askara"
+			},
+			password_confirm: {
+				required: "Sila isi kata laluan anda",
+				minlength: "Kata laluan mestilah sekurang-kurangnya 6 askara",
+				equalTo: "Kata laluan tidak sama.Sila masukkan kata laluan yang sama."
+			},
+			emel: "Sila isi e-mail yang sah",
+			tel_bimbit: {
+				required: "Sila isi no.telefon bimbit anda",
+				minlength: "No.telefon bimbit anda mestilah sekurang-kurangnya 12 nombor (termasuk kod negara dan kawasan)"
+			},
+			umur: {
+				required: "Sila masukkan umur anda"
+			}
+		}
+	});
+	
 // -------------------------------------------------------------------------------------------
 // END EDITING HERE
 // -------------------------------------------------------------------------------------------		
