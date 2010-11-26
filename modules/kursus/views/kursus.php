@@ -4,7 +4,7 @@
 	$orderNum1 = 1;
 	$orderNum2 = 1;
 	$orderNum3 = 1;
-	$today_date = date('Y-m-d');
+	$today_date = date('2010-01-01');
 	$close_date = date('2010-12-30');
 	$cat1 = 'Kursus Berjadual';
 	$cat2 = 'Kursus Luar Jadual';
@@ -18,7 +18,7 @@
 
 	$sql1 = $this->db->query("SELECT * FROM ts_kursus WHERE ts_kursus_kategori = 'Teknologi Tanaman' AND ts_kursus_vendor = '$cat1' AND ts_kursus_publish_status = '1' AND ts_kursus_tarikh_mula BETWEEN '$today_date' AND '$close_date' AND ts_kursus_tarikh_mula IS NOT NULL ORDER BY ts_kursus_tarikh_mula ASC");
 
-	$sql2 = $this->db->query("SELECT * FROM ts_kursus WHERE ts_kursus_kategori = 'Teknologi Makanan' AND ts_kursus_vendor = '$cat1' AND ts_kursus_publish_status = '1' AND ts_kursus_tarikh_mula BETWEEN '$today_date.' AND '$close_date' AND ts_kursus_tarikh_mula IS NOT NULL ORDER BY ts_kursus_tarikh_mula ASC");
+	$sql2 = $this->db->query("SELECT * FROM ts_kursus WHERE ts_kursus_kategori = 'Teknologi Makanan' AND ts_kursus_vendor = '$cat1' AND ts_kursus_publish_status = '1' AND ts_kursus_tarikh_mula BETWEEN '$today_date' AND '$close_date' AND ts_kursus_tarikh_mula IS NOT NULL ORDER BY ts_kursus_tarikh_mula ASC");
 
 	$sql3 = $this->db->query("SELECT * FROM ts_kursus WHERE ts_kursus_kategori = 'Teknologi Lanjutan' AND ts_kursus_vendor = '$cat1' AND ts_kursus_publish_status = '1' AND ts_kursus_tarikh_mula BETWEEN '$today_date' AND '$close_date' AND ts_kursus_tarikh_mula IS NOT NULL ORDER BY ts_kursus_tarikh_mula ASC");
 

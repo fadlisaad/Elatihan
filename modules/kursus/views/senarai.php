@@ -1,7 +1,7 @@
 <?php
 // Definition
 $orderNum0 = 1;
-$today_date = date('Y-m-d');
+$today_date = date('2010-01-01');
 $close_date = date('2010-12-30');
 
 $controller = $this->router->class;
