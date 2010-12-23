@@ -1,11 +1,14 @@
+
 <?php
 // Definition
 	$orderNum0 = 1;
 	$orderNum1 = 1;
 	$orderNum2 = 1;
 	$orderNum3 = 1;
-	$today_date = date('2010-01-01');
-	$close_date = date('2010-12-30');
+	
+	$today_date = $this->settings->item('today_date');
+	$close_date = $this->settings->item('close_date');
+	
 	$cat1 = 'Kursus Berjadual';
 	$cat2 = 'Kursus Luar Jadual';
 
