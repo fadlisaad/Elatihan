@@ -57,7 +57,7 @@
 					<?php foreach ($this->data->news as $news): ?>
 						<div class="entry-head">
 							<span class="categories">&nbsp;<?php echo date('d M Y', $news->created_on); ?>&nbsp;</span>
-							<span class="date"><?php echo $news->title; ?>:&nbsp;<?php echo $news->intro; ?></span>
+							<span class="date"><?php echo $news->title; ?>:&nbsp;<?php echo $news->body; ?></span>
 						</div>
 					<?php endforeach; ?>
 					<?php else: ?>
