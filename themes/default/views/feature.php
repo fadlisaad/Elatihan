@@ -45,7 +45,7 @@
 				</div>
 				
 				<div id="feature_info">
-					<a href="kursus/berjadual" class="big_button heading ie6fix"><strong class='ie6fix'>Kursus 2010</strong></a>
+					<a href="kursus/berjadual" class="big_button heading ie6fix"><strong class='ie6fix'>Kursus 2011</strong></a>
 					<div class="text">
 						<h1>Selamat datang ke E-Latihan</h1>
 						<h2>Perkongsian Maklumat Teknikal MARDI Melalui E-Latihan</h2>
