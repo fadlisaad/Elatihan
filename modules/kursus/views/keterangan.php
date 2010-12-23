@@ -1,11 +1,12 @@
 <?php
+require 'cleaner.php';
 // Queries
 
-	$sql 	= $this->db->query("SELECT * FROM ts_kursus WHERE ts_kursus_id = $id LIMIT 1");
+$sql 	= $this->db->query("SELECT * FROM ts_kursus WHERE ts_kursus_id = $id LIMIT 1");
 
-	// Load helper (form and html)
-	$this->load->helper('form');
-	$this->load->helper('html');
+// Load helper (form and html)
+$this->load->helper('form');
+$this->load->helper('html');
 
 if ($sql->num_rows() > 0)
 {
@@ -18,6 +19,16 @@ if ($sql->num_rows() > 0)
 	$this->session->set_userdata('id', $row->ts_kursus_id);
 	// Form start
 	$attributes = array('class' => '', 'id' => 'kursus-keterangan');
+
+	// Clean MS Word start here
+	$cleaner=new HTMLCleaner();
+
+	$cleaner->Options['UseTidy']=false;
+	$cleaner->Options['OutputXHTML']=false;
+	$cleaner->Options['Optimize']=true;
+
+	$cleaner->html = $row->ts_kursus_keterangan;
+	$cleanHTML=$cleaner->cleanUp('latin1');
 	
 	$keterangan = array(
 		array('Kod', $row->ts_kursus_kod),
