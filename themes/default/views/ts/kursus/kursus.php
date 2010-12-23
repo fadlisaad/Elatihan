@@ -5,7 +5,7 @@
 	$orderNum2 = 1;
 	$orderNum3 = 1;
 	$today_date = date('Y-m-d');
-	$close_date = date('2010-12-30');
+	$close_date = date('2011-12-31');
 	$cat1 = 'Kursus Berjadual';
 	$cat2 = 'Kursus Luar Jadual';
 
