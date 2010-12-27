@@ -38,7 +38,21 @@ else {
 ?>
 
 <!-- Content start here -->
-
+<?php
+	if($controller == "berjadual") { ?>
+<p>
+	<ul>
+		<li>Kursus hanya akan dijalankan mengikut tarikh yang dipaparkan sekiranya jumlah peserta melebihi 15 orang (MS ISO 9001:2008)</li>
+	</ul>
+</p>
+<?php } else { ?>
+<p>
+	<ul>
+		<li>Kursus hanya akan dijalankan sekiranya jumlah peserta melebihi 15 orang (MS ISO 9001:2008)</li>
+		<li>Tarikh akan ditetapkan oleh penganjur</li>
+	</ul>
+</p>
+<?php } ?>
 <!-- Top links button -->
 <div class="entry-head">
 	<span class="categories">&nbsp;<a href="#ternakan">Teknologi Ternakan</a>&nbsp;</span>
