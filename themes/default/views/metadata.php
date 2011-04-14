@@ -12,5 +12,7 @@
 <?php echo js('jquery/jquery.prettyPhoto.js') ?>
 <?php echo js('jquery/jquery.validate.js') ?>
 <?php echo js('custom.js') ?>
+<?php echo js('watermark-core.js') ?>
+<?php echo js('watermark.js') ?>
 
 <?php echo $template['metadata'] ?>
