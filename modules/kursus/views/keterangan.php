@@ -30,7 +30,7 @@ if ($sql->num_rows() > 0)
 	$cleaner->html = $row->ts_kursus_keterangan;
 	$cleanHTML=$cleaner->cleanUp('latin1');
 	
-	$keterangan = array(
+	$keterangan1 = array(
 		array('Kod', $row->ts_kursus_kod),
 		array('Kategori', $row->ts_kursus_kategori),
 		array('Sinopsis', $row->ts_kursus_keterangan),
@@ -41,7 +41,20 @@ if ($sql->num_rows() > 0)
 		array('Lokasi', $row->ts_kursus_lokasi),
 		array('Jenis', $row->ts_kursus_vendor)
 		);
-	echo $this->table->generate($keterangan);
+	$keterangan2 = array(
+		array('Kod', $row->ts_kursus_kod),
+		array('Kategori', $row->ts_kursus_kategori),
+		array('Sinopsis', $row->ts_kursus_keterangan),
+		array('Yuran', 'RM '.number_format($row->ts_kursus_harga,2)),
+		array('Lokasi', $row->ts_kursus_lokasi),
+		array('Jenis', $row->ts_kursus_vendor)
+		);
+	if($row->ts_kursus_vendor == 'Kursus Berjadual') {
+		echo $this->table->generate($keterangan1);
+	}
+	else {
+		echo $this->table->generate($keterangan2);
+	}
 }
 
 // Submit button
