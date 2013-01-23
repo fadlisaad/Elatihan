@@ -32,10 +32,10 @@
 */
 
 // Local
-$db['local']['hostname'] = "202.190.32.26";
-$db['local']['username'] = "root";
-$db['local']['password'] = "xs2mysql";
-$db['local']['database'] = "mardilms";
+$db['local']['hostname'] = "";
+$db['local']['username'] = "";
+$db['local']['password'] = "";
+$db['local']['database'] = "";
 $db['local']['dbdriver'] = "mysql";
 $db['local']['dbprefix'] = "";
 $db['local']['active_r'] = TRUE;
