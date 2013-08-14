@@ -5,20 +5,20 @@ $config['charset'] = 'utf-8';
 $config['crlf'] = '\r\n';
 $config['newline'] = '\r\n';
 
-/* -- PHP's mail() function */
-$config['protocol'] = 'mail';
+/* -- PHP's mail() function 
+$config['protocol'] = 'mail'; */
 
 /* -- Sendmail --
 $config['protocol'] = 'sendmail';
 $config['mailpath'] = '/usr/sbin/sendmail';
 */
 
-/* -- SMTP E-mail --
+/* -- SMTP E-mail -- */
 $config['protocol'] = 'smtp';
 $config['smtp_host'] = 'mail.mardi.gov.my';
 $config['smtp_user'] = 'username';
 $config['smtp_pass'] = 'password';
 $config['smtp_port'] = '25';
-*/
+
 
 ?>
